@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors !</title>
+  <link rel="icon" href="medias\logo\tic-tac.png"  type="image/png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="top-theme">
+    <button class="theme">Change Theme! ☀️</button>     <!-- theme change button -->
+  </div>
+  <div id="tournament-mode">                             <!--tournament box-->
+    <h3>Tournament Mode</h3>
+      <label>
+  <input type="checkbox" id ="tournament-checkbox">
+    5-Round Match (Best of 3)
+    </label>
+    <p id="round-info"></p>
+  </div>
+  <p id="round-info"></p>
+
+  <div class="container">                                 <!--game container-->
+
+    <!-- Game container -->
+
+    <h1>Rock Paper Scissors</h1>
+    <div class="scoreboard">
+      <p>Player: <span id="player-score">0</span></p>
+      <p>Computer: <span id="computer-score">0</span></p>
+    </div>
+
+    <!-- Game choices -->
+
+    <div class="choices">
+      <button class="choice" data-choice="rock">💎</button>
+      <button class="choice" data-choice="paper">📄</button>
+      <button class="choice" data-choice="scissors">✂️</button>
+    </div>
+    <div class="result" id="result">Make your move!</div>
+  </div>
+  <button id="reset">Reset</button>
+
+  <div id="sounds">
+  <button id="toggle-music">🔇 Music: OFF</button>
+  <button id="toggle-sfx">🎮 Sound Effects: ON</button>
+  </div>
+
+  <!-- sounds -->
+  <audio src="medias\sounds\sfx\mouse-click.mp3" id="mouse_tap"></audio>
+
+  <!-- victory sounds -->
+
+  <audio src="medias\sounds\sfx\victory(tour).mp3" id="victory_t" preload="auto"></audio>
+  <audio src="medias\sounds\sfx\victory(normal).mp3" id="victory_normal"></audio>
+
+  <!-- defeat sound -->
+  <audio src="medias\sounds\sfx\windows-error.mp3" id="lose_sound" preload="auto"></audio>
+  
+  <!-- draw sound -->
+
+  <audio src="medias\sounds\sfx\draw.mp3" id="draw_sound" preload="auto"></audio>
+
+  <!-- webpage background sound -->
+
+  <audio src="medias\sounds\music\background-music-calm-soft-334182.mp3" id="bg_music" loop preload="auto" ></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.choices {
+  margin: 1rem 0;
+}
+
+.choice {
+  font-size: 2rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  border: none;
+  background: #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: linear 0.2s;
+}
+
+.choice:hover {
+  background: #beb5b5;
+}
+
+.result {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+
+#top-theme {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.theme {
+  height: 4rem;
+  width: 4rem;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: linear 0.2s;
+}
+
+.theme:hover {
+  background: #beb5b5;
+}
+
+#tournament-mode{
+ background: white;
+  margin: 30px auto; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  max-width: 90%; 
+  width: 500px; 
+  border: 2px solid black;
+  font-weight: bold;
+  border-radius: 50px;
+  text-align: center;
+}
+
+body.light-theme{
+  background-size: auto;           
+  background-repeat: repeat;     
+  background-position: center center;  
+  background-attachment: fixed; 
+  background-image: url('medias/images/light_image.jpg');    
+}
+
+body.dark-theme {
+  background-image: url('medias/images/dark_image.jpg');
+  background-size: auto;           
+  background-repeat: repeat;          
+}
+
+#reset{
+  height: 3rem;
+  width: 8rem;
+  margin-top: 30px;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: linear 0.2s;
+}
+
+#reset:hover{
+  background: #beb5b5;
+}
+
+
+#sounds{
+  display: flex;
+  justify-content: end; 
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap; 
+}
+
+#toggle-music{
+  height: 2.5rem;
+  width: 8rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: linear 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}
+
+#toggle-music:hover, #toggle-sfx:hover {
+  background: #beb5b5;
+}
+
+
+#toggle-sfx{
+  height: 2.5rem;
+  width: 10rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: linear 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}
+
+
+
